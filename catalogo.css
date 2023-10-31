@@ -5,12 +5,13 @@
 }
 
 .producto img {
-    width: 150px;
+    width: 120px;
     height: 160px;
 }
 
 .producto h2, .producto p {
     margin: 0;
+    width: 60%; /* Agregar esta propiedad para establecer el ancho */
 }
 
 footer {
