@@ -1,3 +1,18 @@
+h1 {
+    background-color: #FFA07A; /* Este es un valor de color salmón */
+}
+
+hr { /* Estilos lineas */
+    border: none;
+    height: 3px;
+    background-color: #FFA07A;
+    
+}
+
+.container {
+    background-color: #FFDAB9; /* Este es un valor de color salmón más claro */
+}
+
 .producto {
     display: flex;
     align-items: center;
