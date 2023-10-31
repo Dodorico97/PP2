@@ -1,0 +1,24 @@
+/* styles.css */
+.producto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.producto img {
+    width: 150px; /* Ajusta el tamaño deseado */
+}
+
+.producto h2, .producto p {
+    margin: 0;
+}
+
+footer {
+    position: fixed; /* Fija el footer en la posición deseada */
+    bottom: 0; /* Lo coloca en la parte inferior */
+    right: 0; /* Lo coloca en la esquina derecha */
+}
+
+footer img {
+    width: 70px; /* Ajusta el tamaño deseado para la imagen del footer */
+}
