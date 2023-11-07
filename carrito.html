@@ -1,20 +1,21 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const catalogo = document.getElementById('catalogo');
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="carrito.css">
+    <script src="carrito.js"></script>
+    <title>Carrito de Compras</title>
+</head>
+<body class="container">
+    <h1>Carrito de Compras</h1>
 
-    // Ejemplo de flores
-    const flores = [
-        { nombre: 'Rosa', precio: '$5', imagen: 'rosa.jpg' },
-        { nombre: 'Margarita', precio: '$3', imagen: 'margarita.jpg' },
-        { nombre: 'Orquídea', precio: '$10', imagen: 'orquidea.jpg' }
-    ];
-
-    flores.forEach(flor => {
-        const florDiv = document.createElement('div');
-        florDiv.innerHTML = `
-            <h2>${flor.nombre}</h2>
-            <img src="${flor.imagen}" alt="Imagen de ${flor.nombre}">
-            <p>Precio: ${flor.precio}</p>
-        `;
-        catalogo.appendChild(florDiv);
-    });
-});
+    <div class="carrito">
+        <h2>Mi Carrito</h2>
+        <ul id="carrito-list">
+            <!-- Aquí se mostrarán los elementos del carrito -->
+        </ul>
+        <p>Total: $<span id="total">0.00</span></p>
+    </div>
+</body>
+</html>
