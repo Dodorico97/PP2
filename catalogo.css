@@ -39,17 +39,17 @@ hr { /* Estilos lineas */
     margin-right: 5px;
 }
 
-.producto img { /* Estilo imgenes productos */
-    width: 120px;
-    height: 160px;
+.producto img {
+    width: 150px; /* Cambia el valor del ancho según tus preferencias */
+    height: 200px; /* Puedes ajustar la altura si es necesario */
     border: 2px solid #FFA07A;
     border-radius: 5px;
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); 
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
     transition: transform 0.2s ease;
 }
 
 .producto img:hover {
-    transform: scale(1.1); /* Aumenta el tamaño al hacer hover */
+    transform: scale(1.1);
 }
 
 .producto h2, .producto p {
