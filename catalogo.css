@@ -1,5 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 h1 {
-    background-color: #FFA07A; /* Este es un valor de color salmón */
+    font-size: 40px; /* Tamaño de la fuente */
+    background-color: #FFA07A;
+    color: #129961; /* Color texto */
+    margin: 10px 0; /* Espacio al encabezado */
+    font-family: 'Josefin Sans', sans-serif; /* Fuente Google */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* sombra */
 }
 
 hr { /* Estilos lineas */
@@ -27,6 +38,13 @@ hr { /* Estilos lineas */
 .producto h2, .producto p {
     margin: 0;
     width: 60%; /* Agregar esta propiedad para establecer el ancho */
+}
+
+.producto h2 {
+    font-size: 24px; /* precio, descripcion */
+    color: #FF5733; /* Cambia el color del texto (puedes ajustarlo) */
+    text-decoration: underline; /* Agrega un subrayado al texto */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 footer {
