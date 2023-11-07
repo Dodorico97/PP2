@@ -1,9 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 h1 {
     font-size: 40px; /* Tamaño de la fuente */
     background-color: #FFA07A;
@@ -30,9 +24,17 @@ hr { /* Estilos lineas */
     justify-content: space-between;
 }
 
-.producto img {
+.producto img { /* Estilo imgenes productos */
     width: 120px;
     height: 160px;
+    border: 2px solid #FFA07A;
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.2s ease;
+}
+
+.producto img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al hacer hover */
 }
 
 .producto h2, .producto p {
