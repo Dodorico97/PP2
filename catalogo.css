@@ -1,10 +1,10 @@
-h1 {
-    font-size: 40px; /* Tamaño de la fuente */
+h1 { /* Estilo del Floreria Pedernera.*/
+    font-size: 40px;
     background-color: #FFA07A;
-    color: #129961; /* Color texto */
-    margin: 10px 0; /* Espacio al encabezado */
-    font-family: 'Josefin Sans', sans-serif; /* Fuente Google */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* sombra */
+    color: #129961;
+    margin: 10px 0;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 hr { /* Estilos lineas */
@@ -15,13 +15,28 @@ hr { /* Estilos lineas */
 }
 
 .container {
-    background-color: #FFDAB9; /* Este es un valor de color salmón más claro */
+    background-color: #FFDAB9;
 }
 
 .producto {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.producto p {
+    font-size: 18px; /* Tamaño de fuente para la descripción y el precio */
+    margin: 10px 0; /* Espacio entre párrafos */
+}
+
+.producto p:nth-child(2) {
+    color: #FF5733;
+}
+
+.producto p::before { /*Icono flor, separacion y tamaño*/
+    content: "🌸 "; 
+    font-size: 20px;
+    margin-right: 5px;
 }
 
 .producto img { /* Estilo imgenes productos */
