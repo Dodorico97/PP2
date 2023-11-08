@@ -39,15 +39,6 @@ hr { /* Estilos lineas */
     margin-right: 5px;
 }
 
-.producto img {
-    width: 150px; /* Cambia el valor del ancho según tus preferencias */
-    height: 200px; /* Puedes ajustar la altura si es necesario */
-    border: 2px solid #FFA07A;
-    border-radius: 5px;
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
-    transition: transform 0.2s ease;
-}
-
 .producto img:hover {
     transform: scale(1.1);
 }
@@ -89,4 +80,46 @@ footer img {
 #carrito-button:hover {
     background-color: #FF5733;
     color: #FFFFFF;
+}
+
+.producto-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.producto-info img { /* Esilos imagenes del producto */
+    width: 120;
+    height: 170px;
+    border: 2px solid #FFA07A;
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+    margin-right: 20px;
+}
+
+.producto-info .agregar-al-carrito { /* Esilos boton agregar al carrito */
+    background-color: #FF5733;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.agregar-al-carrito {
+    background-color: #FF5733;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición de 0.3 segundos en el cambio de color de fondo */
+}
+
+.agregar-al-carrito:hover {
+    background-color: #FFA07A; /* Cambia el color de fondo al pasar el cursor */
 }
