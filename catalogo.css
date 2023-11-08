@@ -60,7 +60,6 @@ hr { /* Estilos lineas */
 .producto h2 {
     font-size: 24px; /* precio, descripcion */
     color: #FF5733; /* Cambia el color del texto (puedes ajustarlo) */
-    text-decoration: underline; /* Agrega un subrayado al texto */
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -72,4 +71,22 @@ footer {
 
 footer img {
     width: 70px;
+}
+
+#carrito-button {
+    position: fixed;
+    bottom: 10px;
+    left: 70px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#carrito-button:hover {
+    background-color: #FF5733;
+    color: #FFFFFF;
 }
