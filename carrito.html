@@ -3,18 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="carrito.css">
-    <title>Carrito de Compras</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    <title>FLORERIA PEDERNERA - carrito</title>
+    <link rel="stylesheet" href="carrito.css">
+    <script src="catalogo.js" defer></script>
+    <script src="carrito.js" defer></script>
 </head>
-<body class="container">
-    <h1>Carrito de Compras</h1>
+<body onload="mostrarCarritoEnNuevaVentana()">
 
-    <div class="carrito">
-        <h2>Mi Carrito</h2>
-        <ul id="carrito-list">
-            <!-- Aquí se mostrarán los elementos del carrito -->
+    <header>
+        <h2>Carrito de Compras</h2>
+    </header>
+    <div id="carrito">
+        <ul id="lista-carrito">
+            <li class="item-carrito">
+                <span class="producto-eliminar">
+                    <img src="Imagenes/imageneliminar.png" alt="Eliminar" class="imagen-eliminar">
+                </span>
+                <span class="producto-nombre">Nombre del Producto</span>
+                <span class="producto-precio">$0.00</span>
+                <span class="producto-cantidad">1</span>z
+            </li>
         </ul>
-        <p>Total: $<span id="total">0.00</span></p>
+        <div class="total-carrito">
+            <span id="precio-total">$0.00</span>
+        </div>
+        <div class="contenedor-botones">
+            <button onclick="vaciarCarrito() && mostrarCarritoEnNuevaVentana()">Vaciar carrito</button>
+            <button id="btn-comprar" onclick="redirigirAWhatsApp()">Comprar</button>
+        </div>
     </div>
+
+    <footer>
+        <div>
+            <img src="imagenes/logoinsta.jpg">
+            <p><a href="https://www.instagram.com/floreria_pedernera/ " target="_blank"><h2>Floreria_pedernera</h2></a></p>
+        </div>
+    </footer>
+
+    <script>
+        function mostrarCarritoEnNuevaVentana() {
+            cargarCarritoDesdeLocalStorage();
+            mostrarCarrito();
+        }
+    </script>
+
+    
+<div id="customDialog" class="dialog-overlay">
+    <div class="dialog-content">
+        <p>¿Estás seguro de que quieres vaciar el carrito?</p>
+        <button id="confirmVaciar">Sí</button>
+        <button id="cancelVaciar">No</button>
+    </div>
+</div>
+
 </body>
 </html>
