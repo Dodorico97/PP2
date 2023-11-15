@@ -1,125 +1,136 @@
-h1 { /* Estilo del Floreria Pedernera.*/
-    font-size: 40px;
-    background-color: #FFA07A;
-    color: #129961;
-    margin: 10px 0;
-    font-family: 'Josefin Sans', sans-serif;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-hr { /* Estilos lineas */
-    border: none;
-    height: 3px;
-    background-color: #FFA07A;
-    
-}
-
-.container {
-    background-color: #FFDAB9;
-}
-
-.producto {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.producto p {
-    font-size: 18px; /* Tamaño de fuente para la descripción y el precio */
-    margin: 10px 0; /* Espacio entre párrafos */
-}
-
-.producto p:nth-child(2) {
-    color: #FF5733;
-}
-
-.producto p::before { /*Icono flor, separacion y tamaño*/
-    content: "🌸 "; 
-    font-size: 20px;
-    margin-right: 5px;
-}
-
-.producto img:hover {
-    transform: scale(1.1);
-}
-
-.producto h2, .producto p {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
-    width: 60%; /* Agregar esta propiedad para establecer el ancho */
+    padding: 0;
+    background-color: #ebded4;
 }
 
-.producto h2 {
-    font-size: 24px; /* precio, descripcion */
-    color: #FF5733; /* Cambia el color del texto (puedes ajustarlo) */
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+header, nav, main, footer {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-}
-
-footer img {
-    width: 70px;
-}
-
-#carrito-button {
-    position: fixed;
-    bottom: 10px;
-    left: 70px;
-    background-color: #000000;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 18px;
+.producto-imagen-contenedor img {
     cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-#carrito-button:hover {
-    background-color: #FF5733;
-    color: #FFFFFF;
+.producto-imagen-contenedor:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    opacity: 0.92;
 }
 
-.producto-info {
-    display: flex;
-    justify-content: space-between;
+header {
+    justify-content: center;
+    color: #318f9a;
+    font-family: 'Alice', serif;
+    display: flex; 
     align-items: center;
+    position: relative;
 }
 
-.producto-info img { /* Esilos imagenes del producto */
-    width: 120;
-    height: 170px;
-    border: 2px solid #FFA07A;
-    border-radius: 5px;
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
-    transition: transform 0.2s ease;
-    margin-right: 20px;
+.boton-imagen {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
 }
 
-.producto-info .agregar-al-carrito { /* Esilos boton agregar al carrito */
-    background-color: #FF5733;
-    color: #FFFFFF;
-    border: none;
+#imagenHeader {
+    display: block;
+    max-height: 40px;
+    width: auto;
     border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 18px;
-    cursor: pointer;
     transition: background-color 0.3s;
 }
 
-.agregar-al-carrito {
-    background-color: #FF5733;
-    color: #FFFFFF;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s; /* Transición de 0.3 segundos en el cambio de color de fondo */
+#imagenHeader:hover {
+    background-color: #25676a;
 }
 
-.agregar-al-carrito:hover {
-    background-color: #FFA07A; /* Cambia el color de fondo al pasar el cursor */
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.producto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.producto h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+}
+
+.producto h2 {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(21, 149, 153, 0.7);
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.producto {
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img {
+    max-height: 40px;
+    width: auto;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+footer a {
+    color: #318f9a;
+    font-family: 'Alice', serif;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #000000;
+}
+
+.producto-imagen-contenedor {
+    position: relative;
+    width: 290px;
+    height: 400px;
+}
+
+.badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    font-size: 0.8em;
+    font-weight: bold;
+    display: none;  
+    border: 1px solid white; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
+    text-align: center;
 }
